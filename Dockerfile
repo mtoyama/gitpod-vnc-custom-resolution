@@ -2,7 +2,7 @@
 
 FROM gitpod/workspace-full:latest
 
-USER gitpod
+USER root
 
 # Install Xvfb, JavaFX-helpers and Openbox window manager
 RUN sudo apt-get update \
