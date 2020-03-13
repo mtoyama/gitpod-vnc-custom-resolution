@@ -12,8 +12,6 @@ RUN sudo apt-get update \
 # overwrite this env variable to use a different window manager
 ENV WINDOW_MANAGER="openbox"
 
-RUN sudo find / -name "novnc-index.html" 2>&1 | grep -v "Permission denied"
-
 # Install novnc
 RUN sudo git clone https://github.com/novnc/noVNC.git /opt/novnc \
     && sudo git clone https://github.com/novnc/websockify /opt/novnc/utils/websockify
